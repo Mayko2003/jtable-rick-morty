@@ -11,10 +11,10 @@ $(document).ready(function () {
         toolbar: {
             items: [
                 {
-                    icon: 'https://img.icons8.com/small/256/plus.png',
+                    icon: './assets/icons/excel.png',
                     text: 'Add character',
                     click: () => {
-                        alert('Add new character')
+                        window.open('https://www.youtube.com','_blank')
                     },
                     tooltip: 'Create and save a new character'
                 }
