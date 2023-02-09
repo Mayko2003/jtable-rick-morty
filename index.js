@@ -1,5 +1,8 @@
 import data from './data.json' assert {type: 'json'};
 
+function insertAfter(referenceNode, newNode) {
+    referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
+}
 
 $(document).ready(function () {
     $('#PersonTableContainer').jtable({
@@ -44,7 +47,7 @@ $(document).ready(function () {
             },
             image: {
                 title: 'Image',
-                display: ({record}) => {
+                display: ({ record }) => {
                     return `<img src="${record.image}" style="width: 5em; height: 5em;" >`
                 }
             },
@@ -59,3 +62,11 @@ $(document).ready(function () {
 
     $('#PersonTableContainer').jtable('load');
 });
+
+const el = document.createElement('span')
+el.innerHTML = 'MAYKO'
+
+const prev = document.getElementsByClassName('jtable')
+
+console.log(prev)
+insertAfter(prev, el)
