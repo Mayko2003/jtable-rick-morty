@@ -1,8 +1,8 @@
-# test-jtable
+# JTable with Rick and Morty characters
 
 
-Download and paste jtable source in root folder, then rename folder to 'jtable'
+Download and put jtable library in root folder, then rename folder to 'jtable'
 
-JTABLE LINK
+JTtable link
 
 https://www.jtable.org/
