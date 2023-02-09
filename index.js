@@ -14,7 +14,7 @@ $(document).ready(function () {
                     icon: './assets/icons/excel.png',
                     text: 'Add character',
                     click: () => {
-                        window.open('https://www.youtube.com','_blank')
+                        alert('comming soon')
                     },
                     tooltip: 'Create and save a new character'
                 }
